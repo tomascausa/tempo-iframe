@@ -166,7 +166,6 @@
 			}
 		}
 
-
 		#pardot-form input.text:focus,
 		#pardot-form select:focus,
 		#pardot-form textarea:focus,
@@ -184,7 +183,7 @@
 		}
 
 		#pardot-form .submit input {
-			width: 195px;
+			width: 100%;
 			color: #000000;
 			background-color: #40DDE8;
 			-moz-user-select: inherit;
@@ -200,6 +199,12 @@
 			font-family: Helvetica, Arial, sans-serif;
 			border: none;
 			transition: opacity 250ms ease-in-out;
+		}
+
+		@media screen and (min-width: 420px) {
+			#pardot-form .submit input {
+				width: 195px;
+			}
 		}
 
 		#pardot-form .submit input:hover {
