@@ -143,7 +143,7 @@
 		#pardot-form input.date {
 			/* height: 46px; */
 			/* width: 100%; */
-			padding: 15px 30px;
+			padding: 12px;
 			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			font-size: 13px;
 			font-weight: normal;
@@ -156,6 +156,16 @@
 			border: none;
 			border-radius: 22px;
 		}
+
+		@media screen and (min-width: 420px) {
+			#pardot-form input.text,
+			#pardot-form select,
+			#pardot-form textarea,
+			#pardot-form input.date {
+				padding: 15px 30px;
+			}
+		}
+
 
 		#pardot-form input.text:focus,
 		#pardot-form select:focus,
@@ -184,18 +194,12 @@
 			font-size: 16px !important;
 			font-weight: 300;
 			line-height: 20px;
-			padding: 12px;
+			padding: 15px 30px;
 			position: center;
 			text-align: center;
 			font-family: Helvetica, Arial, sans-serif;
 			border: none;
 			transition: opacity 250ms ease-in-out;
-		}
-
-		@media screen and (min-width: 420px) {
-			#pardot-form .submit input {
-				padding: 15px 30px;
-			}
 		}
 
 		#pardot-form .submit input:hover {
